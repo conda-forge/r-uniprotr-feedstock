@@ -1,4 +1,4 @@
-{% set version = '2.1.0' %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/UniprotR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/UniprotR/UniprotR_{{ version }}.tar.gz
-  sha256: 23ff8bd277a7b221e6c4719854df5b96d2f29cb9acde4755d852878811756dfa
+  sha256: bafe6c6e0bac4a4bd1ef9a1d80296e3acb0c35954a7374ad7258e21704dda944
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -77,12 +77,10 @@ test:
 about:
   home: https://github.com/Proteomicslab57357/UniprotR
   license: GPL-3.0-only
-  summary: Connect to Uniprot <https://www.uniprot.org/> to retrieve information about proteins
-    using their accession number such information could be name or taxonomy information,
-    For detailed information kindly read the publication <https://www.sciencedirect.com/science/article/pii/S1874391919303859>.
+  summary: Connect to Uniprot <https://www.uniprot.org/> to retrieve information about proteins using their accession number such information could be name or taxonomy information, For detailed information kindly read the publication <https://www.sciencedirect.com/science/article/pii/S1874391919303859>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
