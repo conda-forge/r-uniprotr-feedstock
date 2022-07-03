@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/UniprotR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/UniprotR/UniprotR_{{ version }}.tar.gz
-  sha256: bafe6c6e0bac4a4bd1ef9a1d80296e3acb0c35954a7374ad7258e21704dda944
+  sha256: 5969050e8936b829e81f3acf662e0111f193c961cede0aac9c0098b78fb74860
 
 build:
   merge_build_host: true  # [win]
