@@ -1,11 +1,11 @@
-About r-uniprotr
-================
+About r-uniprotr-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-uniprotr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Proteomicslab57357/UniprotR
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-uniprotr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Connect to Uniprot <https://www.uniprot.org/> to retrieve information about proteins using their accession number such information could be name or taxonomy information, For detailed information kindly read the publication <https://www.sciencedirect.com/science/article/pii/S1874391919303859>.
 
